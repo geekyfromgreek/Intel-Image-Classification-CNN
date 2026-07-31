@@ -15,30 +15,6 @@ The dataset used is the [Intel Image Classification](https://www.kaggle.com/data
 - Sea
 - Street
 
-## Folder Structure
-
-```
-Intel-Image-Classification/
-│
-├── app/
-│   ├── app.py
-│   ├── requirements.txt
-│   └── intel_cnn_model.keras
-│
-├── notebook/
-│   └── Intel_Image_Classification.ipynb
-│
-├── images/
-│   ├── sample data.jpg
-│   ├── model comparsion.jpg
-│   ├── prediction.jpg
-│   └── confusion matrix.jpg
-│
-├── README.md
-├── requirements.txt
-├── .gitignore
-└── LICENSE
-```
 
 ## Technologies Used
 
