@@ -29,15 +29,19 @@ The dataset used is the [Intel Image Classification](https://www.kaggle.com/data
 
 ## Model Architecture
 
-The model is a simple CNN with the following layers:
+The model is a Convolutional Neural Network (CNN) with the following structure:
 
-- 3 Convolutional blocks (Conv2D + MaxPooling2D)
-- Flatten layer
-- Dense layer with 512 units and ReLU activation
-- Dropout layer (0.5)
-- Output Dense layer with 6 units and Softmax activation
+- **Rescaling Layer**: Normalizes pixel values from [0, 255] to [0, 1]
+- **3 Convolutional Blocks**:
+  - Conv2D (32 filters, 3x3 kernel) + MaxPooling2D + Dropout
+  - Conv2D (64 filters, 3x3 kernel) + MaxPooling2D + Dropout
+  - Conv2D (128 filters, 3x3 kernel) + MaxPooling2D + Dropout
+- **Flatten Layer**
+- **Dense Layer 1**: 128 units, ReLU activation + Dropout
+- **Dense Layer 2**: 64 units, ReLU activation + Dropout
+- **Output Layer**: Dense layer with 6 units (one for each class), Softmax activation
 
-Input images are resized to 150x150 and normalized by dividing pixel values by 255.
+Input images are resized to 150x150 before feeding them into the model.
 
 ## Model Performance
 
