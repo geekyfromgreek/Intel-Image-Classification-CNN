@@ -33,6 +33,7 @@ seg_train/
 seg_test/
 seg_pred/
 
+
 # Model files (optional, uncomment if model is too large)
 # *.keras
 # *.h5
